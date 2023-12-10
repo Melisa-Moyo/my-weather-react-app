@@ -15,12 +15,14 @@ export default function WeatherTemperature(props) {
       <span className="temperature">
         {unit === "celsius" ? Math.round(celsius) : Math.round(fahrenheit)}
       </span>
-      <a href="#" className="unit" onClick={() => handleClick("celsius")}>
-        °C </a>
-       
-      <a href="#" className="unit" onClick={() => handleClick("fahrenheit")}>
-      |  °F
-      </a>{/* eslint-disable-next-line */}
+      <span className="unit" onClick={() => handleClick("celsius")}>
+  °C |
+</span>   
+
+<span className="unit" onClick={() => handleClick("fahrenheit")}>
+  °F
+</span>
+
     </div>
   );
 }
