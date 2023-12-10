@@ -20,7 +20,7 @@ export default function WeatherTemperature(props) {
        
       <a href="#" className="unit" onClick={() => handleClick("fahrenheit")}>
       |  °F
-      </a>
+      </a>{/* eslint-disable-next-line */}
     </div>
   );
 }
