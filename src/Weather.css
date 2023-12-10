@@ -1,0 +1,107 @@
+.Weather {
+  font-family: arial, sans-serif;
+  border: 1px solid #fff7e4;
+  padding: 16px;
+  border-radius: 4px;
+  background: radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 247, 228) 90%);
+}
+
+.Weather .form-control{
+  margin: 10px;
+  width: 75%;
+  height: 6vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  border: 1px solid #C7D5E2;
+  border-radius: 3px;
+}
+
+.Weather .btn-primary{
+background: #C7D5E2;
+border: #C7D5E2;
+border-radius: 5px;
+color: white;
+font-family: 'Poppins', sans-serif;
+height: 6vh;
+width: 95px;
+}
+
+.Weather h1{
+  font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    margin: 20px 0 9px 20px;
+    line-height: 29px;
+}
+
+.Weather .overview{
+  margin-left: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li {
+  font-size: 23px;
+  font-weight: 100;
+  line-height: 23px;
+  list-style: none;
+}
+
+.Weather .conditions{
+  margin-left: 340px;
+}
+
+.Weather .temperature {
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 64px;
+  margin-left: 5px;
+  font-weight: 400;
+  margin-left: 24px;
+}
+
+.Weather canvas {
+  margin: 15px auto 0 35px;
+}
+
+.Weather .unit {
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+}
+.Weather a{
+  text-decoration: none;
+}
+
+
+
+.btn-primary:hover{
+  font-size: 14px;
+  background-color: #93A2AF;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+
+.Weather h1:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 2px;
+}
+.Weather li:hover{
+  font-variation-settings: "wght" 582;
+  letter-spacing: 4px;
+  font-weight: bolder;
+}
+.Weather a:hover{
+  font-size: 18px;
+  font-weight: bolder;
+  cursor:pointer;
+ 
+}
