@@ -27,7 +27,7 @@ export default function App() {
           </a>{" "}
           and{" "}
           <a
-            href="https://github.com/Melisa-Moyo"
+            href="https://dashing-panda-a595bd.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
