@@ -3,39 +3,28 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherForecastDay(props) {
   function maxTemperature() {
-    let temperature = props.data && props.data.temp && props.data.temp.max ? Math.round(props.data.temp.max) : null;
-    return temperature ? `${temperature}°` : '';
+    let temperature = Math.round(props.data.temp.max);
+    return `${temperature}°`;
   }
 
   function minTemperature() {
-    let temperature = props.data && props.data.temp && props.data.temp.min ? Math.round(props.data.temp.min) : null;
-    return temperature ? `${temperature}°` : '';
+    let temperature = Math.round(props.data.temp.min);
+    return `${temperature}°`;
   }
 
   function day() {
-    if (props.data && props.data.dt) {
-      let date = new Date(props.data.dt * 1000);
-      let day = date.getDay();
+    let date = new Date(props.data.dt * 1000);
+    let day = date.getDay();
 
-      let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-      return days[day];
-    }
-    return '';
+    return days[day];
   }
-
-  function getWeatherIcon() {
-    if (props.data && props.data.weather && props.data.weather.length > 0 && props.data.weather[0].icon) {
-      return <WeatherIcon code={props.data.weather[0].icon} size={36} />;
-    }
-    return null;
-  }
-  
 
   return (
     <div>
       <div className="WeatherForecast-day">{day()}</div>
-      {getWeatherIcon()}
+      <WeatherIcon code={props.data.weather[0].icon} size={36} />
       <div className="WeatherForecast-temperatures">
         <span className="WeatherForecast-temperature-max">
           {maxTemperature()}

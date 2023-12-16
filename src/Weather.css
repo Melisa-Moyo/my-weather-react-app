@@ -13,7 +13,10 @@
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   border: 1px solid #C7D5E2;
+  color: #495057;
   border-radius: 3px;
+  Padding:20px;
+
 }
 
 .Weather .btn-primary{
@@ -22,7 +25,7 @@ border: #C7D5E2;
 border-radius: 5px;
 color: white;
 font-family: 'Poppins', sans-serif;
-height: 6vh;
+height: 7.2vh;
 width: 95px;
 }
 
@@ -53,6 +56,7 @@ width: 95px;
 
 .Weather .conditions{
   margin-left: 340px;
+  margin-bottom: 20px;
 }
 
 .Weather .temperature {
@@ -66,8 +70,10 @@ width: 95px;
 }
 
 .Weather canvas {
-  margin: 15px auto 0 35px;
+  margin: 10px 17px 0 25px;
 }
+
+
 
 .Weather .unit {
   color: rgb(33, 33, 33);
@@ -100,9 +106,5 @@ width: 95px;
   font-weight: bolder;
 }
 
-.Weather span:hover {
-  font-size: 18px;
-  font-weight: bolder;
-  cursor: pointer;
-}
+
 
