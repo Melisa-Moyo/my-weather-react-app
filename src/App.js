@@ -11,7 +11,7 @@ export default function App() {
         <footer>
           This project was coded by{" "}
           <a
-            href="https://github.com/Melisa-Moyo"
+            href="https://www.linkedin.com/in/melisa-m-a88653142/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -27,7 +27,7 @@ export default function App() {
           </a>{" "}
           and{" "}
           <a
-            href="https://dashing-panda-a595bd.netlify.app/"
+            href="https://astonishing-unicorn-f59262.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
